@@ -1,3 +1,4 @@
+import PokemonCard from "@/app/components/PokemonCard";
 import Data from "../app/components/data";
 import ZodiacCard from "../app/components/ZodiacCard";
 import styles from "../app/page.module.css";
@@ -7,9 +8,6 @@ export default function Home() {
 
   return (
     <>
-    <head>
-      <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet" />
-    </head>
     <main className={styles.page}>
         <h1 className={styles.projectName}>{projectName}</h1>
         {Data.map((zodiac) =>(

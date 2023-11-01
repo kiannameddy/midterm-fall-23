@@ -2,6 +2,7 @@
 import Link from "next/link";
 import styles from "./zodiacCard.module.css"; 
 
+
 const ZodiacCard = ({ date, text, title, imageSrc, imageAlt, id }) => {
 
     return (
@@ -12,12 +13,12 @@ const ZodiacCard = ({ date, text, title, imageSrc, imageAlt, id }) => {
             <div className={styles.zodiacCardContent}>
                 <h2>{title}</h2>
                 <p>{date}</p>
-                <p>{text}</p>
                 <p>
                     <Link className={styles.zodiacCardLink}href={`zodiac/${id}`}>Who's Your Pokemon!</Link>
                 </p>
             </div>
         </div>
+
     ); 
 };
 

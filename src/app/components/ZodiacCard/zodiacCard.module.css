@@ -1,15 +1,18 @@
-.projectName {
-    color: rgb(30, 109, 30);
-    margin-left: 100px;
+.zodiac {
+    gap: 10px;
 }
 
 .zodiacCard {
-    border: 5px solid rgb(20, 62, 17);
+    border: 5px solid rgb(25, 68, 142);
     border-radius: 15px;
     padding: 20px; 
-    display: flex;
-    margin: 50px;
-    background-color: rgb(30, 109, 30);
+    display: inline-flex;
+    justify-content: center;
+    column-gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    max-width: 40%;
+    background-color: rgb(255, 255, 255);
 }
 
 .zodiacCardImage {
@@ -23,21 +26,39 @@
     height: auto;
     width: 100%;
     flex-shrink: 0;
-}
+} 
 
-/* .zodiacCardContent {
+.zodiacCardContent {
     color: white;
     padding-left: 15px;
     align-items: left;
     justify-content: center;
     display: flex;
     flex-direction: column;
-} */
+} 
 
 .zodiacCardLink {
-    color: white;
+    color: rgb(25, 68, 142);
+    background-color: rgb(255, 255, 255);
+} 
+
+.zodiacCardLink:hover {
+    color:rgb(90, 121, 232);
 }
 
-/* .zodiacCardLink:hover {
-    color:rgb(20, 62, 17);
-} */
+.zodiacCardContent {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+}
+
+.zodiacCardContent h2 {
+    color: rgb(25, 68, 142);
+    background-color: rgb(255, 255, 255);
+}
+
+
+.zodiacCardContent p {
+    color: rgb(25, 68, 142);
+    background-color: rgb(255, 255, 255);
+}
